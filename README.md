@@ -1,9 +1,15 @@
-<!-- Top Visualizations -->
-<div style="text-align:center; margin-bottom: 30px;">
-    <h2>Visualizations</h2>
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Booking Data Analysis & ADR Prediction</title>
+</head>
+<body>
 
-        <!-- App Photos -->
+<!-- Key Visualizations at the top -->
+<div style="text-align:center; margin-bottom: 30px;">
+    <h2>Key Visualizations</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
         <div>
             <img src="App_photos/ADR_MONTHS.png" alt="ADR by Month" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
             <p>ADR by Month</p>
@@ -16,8 +22,13 @@
             <img src="App_photos/type_of_guests.png" alt="Guest Composition" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
             <p>Type of Guests</p>
         </div>
+    </div>
+</div>
 
-        <!-- Model Performance Photos -->
+<!-- Model Performance Visualizations at the top, below the key visualizations -->
+<div style="text-align:center; margin-bottom: 30px;">
+    <h2>Model Performance Visualizations</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
         <div>
             <img src="Model_performance/performance_mean_median_difference1.png" alt="Mean-Median Difference 1" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
             <p>Performance Mean-Median Difference 1</p>
@@ -27,21 +38,12 @@
             <p>Performance Mean-Median Difference 2</p>
         </div>
         <div>
-            <img src="Model_performance/Visualisation_of_performance.png" alt="Visualization of Performance" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
+            <img src="Model_performance/Visualisation_of_performance.png" alt="Performance Visualization" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
             <p>Visualization of Performance</p>
         </div>
-
     </div>
 </div>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hotel Booking Data Analysis & ADR Prediction</title>
-</head>
-<body>
 
 <h1>Hotel Booking Data Analysis & ADR Prediction</h1>
 
