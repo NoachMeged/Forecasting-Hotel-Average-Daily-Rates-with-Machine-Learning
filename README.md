@@ -10,9 +10,6 @@
             <img src="App_photos/ADR_YEARS.png" alt="ADR by Year" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
             <p>ADR by Year</p>
         </div>
-        <div>
-            <img src="App_photos/type_of_guests.png" alt="Guest Composition" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
-            <p>Type of Guests</p>
         </div>
     </div>
 </div>
