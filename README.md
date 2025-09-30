@@ -25,17 +25,21 @@
     </div>
 </div>
 
-<!-- Model Performance Visualizations at the top, below the key visualizations -->
+<!-- Model Performance Visualizations -->
 <div style="text-align:center; margin-bottom: 30px;">
     <h2>Model Performance Visualizations</h2>
     <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
         <div>
-            <img src="Model_performance/performance_mean_median_difference1.png" alt="Mean-Median Difference 1" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
-            <p>Performance Mean-Median Difference 1</p>
+            <img src="Model_performance/performance_mean_median_difference.png" alt="Mean-Median Difference" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
+            <p>Performance Mean-Median Difference</p>
         </div>
         <div>
-            <img src="Model_performance/performance_mean_median_difference2.png" alt="Mean-Median Difference 2" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
-            <p>Performance Mean-Median Difference 2</p>
+            <img src="Model_performance/performance_residuals.png" alt="Residuals" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
+            <p>Performance Residuals</p>
+        </div>
+        <div>
+            <img src="Model_performance/R2_score.png" alt="R2 Score" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
+            <p>R² Score</p>
         </div>
         <div>
             <img src="Model_performance/Visualisation_of_performance.png" alt="Performance Visualization" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
