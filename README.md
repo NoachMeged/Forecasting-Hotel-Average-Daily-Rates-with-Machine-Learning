@@ -1,3 +1,23 @@
+<!-- Images at the top -->
+<div style="text-align:center; margin-bottom: 30px;">
+    <h2>Key Visualizations</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <div>
+            <img src="images/ADR_MONTHS.png" alt="ADR by Month" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
+            <p>ADR by Month</p>
+        </div>
+        <div>
+            <img src="images/ADR_YEARS.png" alt="ADR by Year" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
+            <p>ADR by Year</p>
+        </div>
+        <div>
+            <img src="images/type_of_guests.png" alt="Guest Composition" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
+            <p>Type of Guests</p>
+        </div>
+    </div>
+</div>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
