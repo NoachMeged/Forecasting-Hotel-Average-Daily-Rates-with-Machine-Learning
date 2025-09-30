@@ -1,59 +1,118 @@
-# Hotel Booking Data Analysis
+Hotel Booking Data Analysis & ADR Prediction
 
-This project involves analyzing hotel booking data and making adr predictions based on various features, such as the length of stay, lead time, room type, number of guest and market segment ect.
+This project focuses on analyzing hotel booking data and predicting the Average Daily Rate (ADR) for hotel reservations using machine learning. It provides insights into factors affecting hotel pricing and supports data-driven revenue management.
 
-### Data Preprocessing Steps
+Project Overview
 
-1. **Load Data**: 
-   - The dataset is loaded from a CSV file.
-   ```python
-   df = pd.read_csv('/path/to/hotel_booking_data.csv')
-Feature Engineering:
+The analysis evaluates how various features influence ADR, including:
 
-Lead Time is categorized into different bins based on quartiles to analyze booking trends.
-ADR Binning: ADR (Average Daily Rate) is divided into bins using dynamic percentiles.
-Meal Encoding: The meal column is encoded as a numerical variable using predefined mappings.
-Country Quantiles: Country-specific ADR quantiles are mapped using an external CSV.
-Market Segment and Distribution Channel: These features are binned and merged with the dataset for analysis.
-Room Type ADR: A new column is added to categorize room types into ADR bins (Low, Medium, High) based on predefined ADR values.
-Clean Up:
+Stay Duration: Weekday and weekend nights.
 
-redundant columns such as country, market_segment, distribution_channel, and reserved_room_type are dropped from the dataset for efficiency.
+Lead Time: Days between booking and arrival, categorized into quartiles.
+
+Room Type: Categorized into ADR bins (Low, Medium, High).
+
+Guest Composition: Number of adults, children, and babies.
+
+Market Segment & Distribution Channel: Encoded and binned for predictive modeling.
+
+Meal Plan: Numerically encoded.
+
+Country: ADR quantiles per country.
+
+Deposit Type: Encoded for model input.
+
+The goal is to predict ADR for future bookings and provide actionable insights for pricing strategy optimization.
+
+Data Preprocessing
+
+Key preprocessing steps:
+
+Feature Engineering
+
+Lead Time binned by quartiles.
+
+ADR dynamically binned using percentiles.
+
+Meal plans and deposit types numerically encoded.
+
+Country-specific ADR quantiles merged.
+
+Market segment and distribution channel merged with ADR bins.
+
+Room types categorized based on ADR averages.
+
+Data Cleaning
+
+Redundant columns (country, market_segment, distribution_channel, reserved_room_type) removed.
 
 Machine Learning Model
-Model Loading:
 
-A pre-trained Random Forest model is loaded using pickle which can be created by running the "Data_EDA_VIsualisations_Model_building.ipynb" notebook.
-python
+A Random Forest Regressor is used for ADR prediction:
 
-The dataset is aligned with the model's expected features by adding missing columns and ensuring they match the model's input such as "cancelled yes or no" or which room a client is assigned to because its future data.
+Model Training
 
-ADR Prediction:
-
-The model predicts the ADR (adr) for each entry in the dataset using the trained Random Forest model.
-
-# Separate features and target variable
-X = df.drop(columns=['adr'])
-y = df['adr']
-
-# Split the data into training and testing sets (80/20 split)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-
-
-# --- Random Forest Regressor ---
 rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
 rf_model.fit(X_train, y_train)
 y_pred_rf = rf_model.predict(X_test)
 
-# Evaluate Random Forest
-rmse_rf = np.sqrt(mean_squared_error(y_test, y_pred_rf))
-r2_rf = r2_score(y_test, y_pred_rf)
 
-print("Random Forest - RMSE:", rmse_rf)
-print("Random Forest - R²:", r2_rf)
+Evaluation
 
-The dataset is saved with the predicted ADR values for further analysis.
+RMSE and R² metrics assess model performance.
 
-Conclusion
-This analysis provides valuable insights into how different factors such as the length of stay, market segment, and distribution channel affect the ADR of hotel bookings. The trained model can be used to predict ADR for new bookings, helping to optimize pricing strategies.
+Predictions appended to the dataset for further analysis.
+
+Feature Alignment
+
+Ensure input data columns match the trained model’s expected features.
+
+Insights & Applications
+
+Identifies key drivers of ADR:
+
+Booking lead time
+
+Stay duration
+
+Market segment and distribution channel
+
+Room type and guest composition
+
+Supports dynamic pricing and revenue optimization.
+
+Can be integrated into an interactive Streamlit dashboard for real-time predictions.
+
+Installation
+
+Clone the repository:
+
+git clone <repo-url>
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+Run the Streamlit app:
+
+streamlit run Hotel_prediction_app_code.py
+
+Contributing
+
+Contributions are welcome for improvements in:
+
+Data preprocessing
+
+Feature engineering
+
+Model performance
+
+Visualization and dashboard features
+
+Please submit pull requests with clear documentation.
+
+License
+
+This project is open-source and available for educational and research purposes.
