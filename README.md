@@ -1,7 +1,9 @@
-<!-- Key Visualizations -->
+<!-- Top Visualizations -->
 <div style="text-align:center; margin-bottom: 30px;">
-    <h2>Key Visualizations</h2>
+    <h2>Visualizations</h2>
     <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+
+        <!-- App Photos -->
         <div>
             <img src="App_photos/ADR_MONTHS.png" alt="ADR by Month" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
             <p>ADR by Month</p>
@@ -14,13 +16,8 @@
             <img src="App_photos/type_of_guests.png" alt="Guest Composition" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
             <p>Type of Guests</p>
         </div>
-    </div>
-</div>
 
-<!-- Model Performance Visualizations -->
-<div style="text-align:center; margin-bottom: 30px;">
-    <h2>Model Performance Visualizations</h2>
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <!-- Model Performance Photos -->
         <div>
             <img src="Model_performance/performance_mean_median_difference1.png" alt="Mean-Median Difference 1" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
             <p>Performance Mean-Median Difference 1</p>
@@ -30,30 +27,12 @@
             <p>Performance Mean-Median Difference 2</p>
         </div>
         <div>
-            <img src="Model_performance/Visualisation_of_performance.png" alt="Performance Visualization" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
+            <img src="Model_performance/Visualisation_of_performance.png" alt="Visualization of Performance" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
             <p>Visualization of Performance</p>
         </div>
+
     </div>
 </div>
-
-
-
-<!-- Images at the top -->
-<div style="text-align:center; margin-bottom: 30px;">
-    <h2>Key Visualizations</h2>
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-        <div>
-            <img src="App_photos/ADR_MONTHS.png" alt="ADR by Month" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
-            <p>ADR by Month</p>
-        </div>
-        <div>
-            <img src="App_photos/ADR_YEARS.png" alt="ADR by Year" style="max-width: 300px; border: 1px solid #ccc; border-radius: 5px;">
-            <p>ADR by Year</p>
-        </div>
-        </div>
-    </div>
-</div>
-
 
 
 <!DOCTYPE html>
